@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  overflow: hidden;
+}
+.header {
+  padding: 20px;
+  border-bottom: solid black;
+  position: absolute;
+  font-weight: bold;
+  display: flex;
+  top: 0px;
+  width: 100%;
+  height: 45px;
+  font-size: 1cm;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  flex-direction: row;
+  background-color: bisque;
+  background-image: url(./assets/bakery\ cooking-utensils.jpg);
+  background-repeat: no no-repeat;
+  background-position: cover;
+}
+
+.game {
+  width: 35%;
+  height: 82%;
+  position: relative;
+  border: solid;
+  align-items: center;
+}
+
+.cookie {
+  cursor: pointer;
+  filter: drop-shadow(0 0 2px white);
+  animation: rotates 100s linear infinite;
+}
+
+.upgrade {
+  transform: scale(0.9);
+}
+
+.cookie-particle {
+  width: 30px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  pointer-events: none;
+  animation: cookie-up 3s linear forwards;
+}
+
+@keyframes rotates {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotates(360deg);
+  }
+}
+
+.upgrade {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  filter: drop-shadow(0 0 2px white);
+}
+.Cookie-Counter {
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 0 0 10px;
+  text-align: center;
+  width: 90%;
+  border-radius: 10px;
+  height: 30px;
+  background-color: blue;
+  padding: 20px;
+  border: solid;
+}
+.cps {
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 0 0 10px;
+  text-align: center;
+  width: 90%;
+  border-radius: 10px;
+  height: 30px;
+  background-color: blue;
+  padding: 20px;
+  border: solid;
+}
+
+.upgradeStore {
+  width: 33%;
+  height: 82%;
+  position: relative;
+  border: solid;
+  align-items: center;
+}
+.menu {
+  width: 33%;
+  height: 82%;
+  position: relative;
+  border: solid;
+  font-size: 2rem;
+}
+.store h2 {
+  font: 3rem;
+  padding: 15px;
+  position: relative;
+  border: solid;
+}
+
+.footer {
+  position: absolute;
+  text-align: center;
+  bottom: 20px;
+}
+
+.product0 {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  position: relative;
+  align-items: center;
+  padding: 20px;
+  background-color: grey;
+  border: solid;
+}
+
+.product1 {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  position: relative;
+  align-items: center;
+  padding: 20px;
+  background-color: grey;
+  border: solid;
+}
+
+.product2 {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  position: relative;
+  align-items: center;
+  padding: 20px;
+  background-color: grey;
+  border: solid;
+}
+
+.product3 {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  position: relative;
+  align-items: center;
+  padding: 20px;
+  background-color: grey;
+  border: solid;
+  opacity: 6;
+}
+
+.product4 {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  position: relative;
+  align-items: center;
+  padding: 20px;
+  background-color: grey;
+  border: solid;
+}
+.info {
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  font: white;
+  position: relative;
+  background-color: darkslategrey;
+}
+
+.stats {
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  font: white;
+  position: relative;
+  background-color: darkslategrey;
+}
+
+.ascend {
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  font: white;
+  position: relative;
+  background-color: darkslategrey;
+}
+
+.opt {
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  font: white;
+  position: relative;
+  background-color: darkslategrey;
+}
+
+.title {
+  padding: 15px;
+  background-color: darkolivegreen;
+}
