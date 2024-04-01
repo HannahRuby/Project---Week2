@@ -4,6 +4,8 @@ const cookieBtn = document.getElementById("cookieBtn");
 const upgradeBtn = document.getElementById("upgradeBtn");
 const cookieSpan = document.getElementById("cookieSpan");
 const cpsSpan = document.getElementById("cpsSpan");
+const autoClick = document.getElementById("autoClick");
+const autoClickTextPrice = document.getElementById("autoClick .price span");
 
 const stats = {
   cookieCount: 0,
@@ -44,4 +46,4 @@ setInterval(function () {
   stats.cookieCount += stats.cps;
   updatePage();
   updateStorage();
-}, 3000);
+}, 1000);
