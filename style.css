@@ -4,9 +4,19 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   overflow: hidden;
 }
+@media (min-width: 600) {
+  body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+:focus {
+  outline: 2px solid blue;
+}
+
 .header {
   padding: 20px;
-  border-bottom: solid black;
+  border-bottom: solid;
   position: absolute;
   font-weight: bold;
   display: flex;
@@ -39,8 +49,10 @@
 }
 
 .cookie {
+  min-height: 120px;
+  min-width: 120px;
   cursor: pointer;
-  filter: drop-shadow(0 0 2px white);
+  filter: drop-shadow(0 0 5px white);
   animation: rotate 100s linear infinite;
   display: flex;
   justify-content: center;
